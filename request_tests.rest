@@ -1,0 +1,29 @@
+GET http://localhost:3001/
+
+###
+DELETE http://localhost:3001/api/persons/2
+
+###
+POST http://localhost:3001/api/persons
+content-type: application/json
+
+{
+    "name": "Jeff Bezos",
+    "number": "228-22-22"
+}
+
+###
+GET http://localhost:3001/api/persons
+
+###
+GET https://phonebook228.fly.dev/api/persons
+
+###
+POST https://phonebook228.fly.dev/api/persons
+content-type: application/json
+
+{
+    "name": "Jeff Bezos",
+    "number": "228-22-22"
+}
+
